@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["@playwright/test"],         // ✅ Required for type detection
+    "resolveJsonModule": true,             // ✅ Allows importing .json files
+    "outDir": "dist"                       // ✅ Output folder for compiled JS
+  },
+  "include": ["tests", "pages"],            // ✅ Your source folders
+  "exclude": ["node_modules", "dist"]
+}

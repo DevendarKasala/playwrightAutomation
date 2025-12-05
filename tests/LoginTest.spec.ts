@@ -4,7 +4,7 @@ import { LoginPage } from './Pages/LoginPage';
 test('Admin Login', async ({ page }: { page: Page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
-  await loginPage.login('admin@gvk.com', 'Mewurk@123');
+  await loginPage.login('admin@gvk.com', 'Mewurk@1234');
 
   await expect(page).toHaveURL(/home/); // verifying the redirected URL
 });

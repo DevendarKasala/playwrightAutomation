@@ -1,0 +1,45 @@
+playwrightAutomationTSC/
+├── tests/
+│   ├── Pages/
+│   │   ├── BasePage.ts
+│   │   ├── LoginPage.ts
+│   │   ├── EmployeeProfilePage.ts
+│   │   ├── KioskPage.ts
+│   │   └── AttendanceCorrectionPage.ts
+│   ├── Actions/
+│   │   ├── LoginActions.ts
+│   │   ├── UploadKioskPhotoActions.ts
+│   │   ├── KioskDeviceActions.ts
+│   │   └── AttendanceCorrectionActions.ts
+│   ├── Specs/
+│   │   ├── Login/
+│   │   │   └── LoginTest.spec.ts
+│   │   ├── Kiosk/
+│   │   │   ├── KioskDeviceE2E.spec.ts
+│   │   │   └── UploadKioskPhoto.spec.ts
+│   │   ├── Attendance/
+│   │   │   └── AttendanceCorrectionAdmin.spec.ts
+│   │   └── Smoke/
+│   │       └── SmokeTests.spec.ts
+│   ├── TestData/
+│   │   ├── loginTestData.ts
+│   │   ├── kioskTestData.ts
+│   │   └── attendanceTestData.ts
+│   ├── Utils/
+│   │   ├── logger.ts
+│   │   ├── fileHelper.ts
+│   │   └── waitHelper.ts
+│   └── config/
+│       └── testConfig.ts
+├── reports/
+│   ├── html/
+│   ├── screenshots/
+│   └── daily-report.html
+├── scripts/
+│   ├── runDailyTests.sh
+│   ├── runSmokeTests.sh
+│   ├── runKioskTests.sh
+│   └── runAllTests.sh
+├── playwright.config.ts
+├── package.json
+└── .env

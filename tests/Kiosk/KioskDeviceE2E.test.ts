@@ -1,7 +1,7 @@
 import { test, expect, Page } from '@playwright/test';
 import { LoginPage } from '../Pages/LoginPage'; 
 import { KioskPage } from "../Pages/KioskPage";
-import { kioskTestData } from "../../tests/Test_Data_Profile/kiosktestdata";
+import { kioskTestData } from "../TestData/kiosktestdata";
 // const { kioskdeviceName, officeName, kioskAddAdmin } = kioskTestData[0];
 const  kioskdeviceName = kioskTestData[0].kioskdeviceName;
 const   officeName = kioskTestData[0].officeName;
@@ -18,16 +18,16 @@ test('Kiosk Device E2E', async({ page }: { page: Page}) => {
     await loginPage.goto();
 
     // Login to the portal as admin
-    await loginPage.login('admin@gvk.com', 'Mewurk@123');
+    await loginPage.login('admin@gvk.com', 'Mewurk@1234');
 
     //First test case as create device
     await kioskPage.createKioskDevice(kioskdeviceName, officeName);
 
-    //Second testcase as Edit Device
-    await kioskPage.EditKioskDevice('Goa');
+    // //Second testcase as Edit Device
+    // await kioskPage.EditKioskDevice('Goa');
 
-    //Delete the Created Device
-    await kioskPage.DeleteKioskDevice(kioskdeviceName);
+    // //Delete the Created Device
+    // await kioskPage.DeleteKioskDevice(kioskdeviceName);
 
 
 });

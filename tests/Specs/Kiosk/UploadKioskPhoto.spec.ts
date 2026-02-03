@@ -3,7 +3,7 @@ import { LoginPage } from '../../Pages/LoginPage';
 import { LoginActions } from '../../Actions/LoginActions';
 import { EmployeeProfilePage } from '../../Pages/EmployeeProfilePage';
 import { UploadKioskPhotoActions } from '../../Actions/UploadKioskPhotoActions';
-import { loginTestData } from '../../TestData/LoginTestData';
+import { loginTestData } from '../../TestData/loginTestData';
 import { kioskTestData } from '../../TestData/kiosktestdata';
 
 test('Upload Kiosk Photo E2E', async ({ page }) => {
